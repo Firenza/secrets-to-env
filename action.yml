@@ -2,7 +2,7 @@ name: 'Secrets to environment variables'
 description: 'Clones the specified repository secrets into environment variables'
 author: 'Chad Oftedahl'
 branding:
-  icon: 'archive'  
+  icon: 'archive'
   color: 'blue'
 inputs:
   secrets:
@@ -15,5 +15,5 @@ inputs:
     description: "regex to select secret name text to make lower case"
     required: false
 runs:
-  using: 'node20'
+  using: 'node24'
   main: 'dist/index.js'
